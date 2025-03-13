@@ -1,30 +1,30 @@
 {
-    "manifest_version": 3,
-    "name": "Codeforces Helper",
-    "version": "1.0",
-    "description": "Organize, sort, and filter Codeforces problems with additional statistics and features.",
-    "permissions": ["storage", "activeTab", "scripting"],
-    "action": {
+  "manifest_version": 3,
+  "name": "Codeforces Helper",
+  "version": "1.0",
+  "description": "Organize, sort, and filter Codeforces problems with additional statistics and features.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
       "default_popup": "popup/popup.html",
       "default_icon": {
-        "16": "icons/codeforces_organizer_16x16(1).png",
-        "48": "icons/codeforces_organizer_48x48(1).png",
-        "128": "icons/codeforces_organizer_128x128(1).png"
+          "16": "icons/codeforces_organizer_16x16(1).png",
+          "48": "icons/codeforces_organizer_48x48(1).png",
+          "128": "icons/codeforces_organizer_128x128(1).png"
       }
-    },
-    "icons": {
+  },
+  "icons": {
       "16": "icons/codeforces_organizer_16x16(1).png",
       "48": "icons/codeforces_organizer_48x48(1).png",
       "128": "icons/codeforces_organizer_128x128(1).png"
-    },
-    "background": {
+  },
+  "background": {
       "service_worker": "background/background.js"
-    },
-    "content_scripts": [
+  },
+  "content_scripts": [
       {
-        "matches": ["https://codeforces.com/*"],
-        "js": ["content/content.js"],
-        "css": ["content/content.css"]
+          "matches": ["https://codeforces.com/*"],
+          "js": ["content/content.js"],
+          "css": ["content/content.css"]
       }
-    ]
-  }
+  ]
+}
