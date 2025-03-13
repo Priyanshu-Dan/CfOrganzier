@@ -1,7 +1,6 @@
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     console.log("Message received in background script:", request);
   
-    // Handle different actions
     switch (request.action) {
       case "logMessage":
         console.log("Logging message:", request.message);
