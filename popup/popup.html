@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CfOrganizer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Codeforces Helper</h1>
+  <div id="filters">
+    <label for="difficulty">Difficulty:</label>
+    <select id="difficulty">
+      <option value="all">All</option>
+      <option value="800">800</option>
+      <option value="900">900</option>
+      <option value="1000">1000</option>
+      <option value="1100">1100</option>
+      <option value="1200">1200</option>
+      <option value="1300">1300</option>
+      <option value="1400">1400</option>
+      <option value="1500">1500</option>
+      <option value="1600">1600</option>
+        <option value="1700">1700</option>
+        <option value="1800">1800</option>
+        <option value="1900">1900</option>
+        <option value="2000">2000</option>
+        <option value="2100">2100</option>
+        <option value="2200">2200</option>
+        <option value="2300">2300</option>
+        <option value="2400">2400</option>
+        <option value="2500">2500</option>
+        <option value="2600">2600</option>
+        <option value="2700">2700</option>
+        <option value="2800">2800</option>
+        <option value="2900">2900</option>
+        <option value="3000">3000</option>
+        <option value="3100">3100</option>
+        <option value="3200">3200</option>
+        <option value="3300">3300</option>
+        <option value="3400">3400</option>
+
+    </select>
+    <label for="tags">Tags:</label>
+    <select id="tags">
+        <option value="all">All</option>
+        <option value="2-sat">2-SAT</option>
+        <option value="binary-search">Binary Search</option>
+        <option value="bitmasks">Bitmasks</option>
+        <option value="brute-force">Brute Force</option>
+        <option value="chinese-remainder-theorem">Chinese Remainder Theorem</option>
+        <option value="combinatorics">Combinatorics</option>
+        <option value="constructive-algorithms">Constructive Algorithms</option>
+        <option value="data-structures">Data Structures</option>
+        <option value="dfs">DFS and Similar</option>
+        <option value="divide-and-conquer">Divide and Conquer</option>
+        <option value="dp">DP</option>
+        <option value="dsu">DSU</option>
+        <option value="expression-parsing">Expression Parsing</option>
+        <option value="fft">FFT</option>
+        <option value="flows">Flows</option>
+        <option value="games">Games</option>
+        <option value="geometry">Geometry</option>
+        <option value="graph-matchings">Graph Matchings</option>
+        <option value="graphs">Graphs</option>
+        <option value="greedy">Greedy</option>
+        <option value="hashing">Hashing</option>
+        <option value="implementation">Implementation</option>
+        <option value="interactive">Interactive</option>
+        <option value="math">Math</option>
+        <option value="matrices">Matrices</option>
+        <option value="meet-in-the-middle">Meet-in-the-Middle</option>
+        <option value="number-theory">Number Theory</option>
+        <option value="probabilities">Probabilities</option>
+        <option value="schedules">Schedules</option>
+        <option value="shortest-paths">Shortest Paths</option>
+        <option value="sortings">Sortings</option>
+        <option value="string-suffix-structures">String Suffix Structures</option>
+        <option value="strings">Strings</option>
+        <option value="ternary-search">Ternary Search</option>
+        <option value="trees">Trees</option>
+        <option value="two-pointers">Two Pointers</option>
+      <!-- Add more options -->
+    </select>
+    <button id="applyFilters">Apply Filters</button>
+  </div>
+  <div id="statistics">
+    <h2>Statistics</h2>
+    <p>Total Problems Solved: <span id="totalSolved">0</span></p>
+    <p>Average Difficulty: <span id="avgDifficulty">0</span></p>
+  </div>
+  <div id="customLists">
+    <h2>Custom Lists</h2>
+    <select id="listSelector">
+      <option value="todo">To Do</option>
+      <option value="inProgress">In Progress</option>
+      <option value="completed">Completed</option>
+    </select>
+    <button id="addToList">Add to List</button>
+    <ul id="listDisplay"></ul>
+  </div>
+  <div id="recommendations">
+    <h2>Recommendations</h2>
+  </div>
+  <button id="toggleDarkMode">Toggle Dark Mode</button>
+  <script src="popup.js"></script>
+</body>
+</html>
